@@ -1,0 +1,8 @@
+<view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <navigator url="/pages/item/item?title=navigate1"   hover-class="navigator-hover" class="flex-item bc_green">1</navigator>
+    <navigator url="/pages/item/item?title=navigate2"   hover-class="navigator-hover" class="flex-item bc_red">2</navigator>
+    <navigator url="/pages/item/item?title=navigate3"   hover-class="navigator-hover" class="flex-item bc_blue">3</navigator>
+  </view>
+</view>
