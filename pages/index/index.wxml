@@ -4,18 +4,20 @@
             <image src="{{item.image}}" style="width:100%">
             </image>
         </view>
-        <view style="margin-top:20rpx;">
-            {{item.field1}}
-        </view>
-        <view style="display:flex;margin-top:20rpx;">
-            <view style="flex:1">
-                {{item.field2}}
+        <view style="padding:20rpx;">
+            <view>
+                {{item.field1}}
             </view>
-            <view style="flex:none">
-                {{item.field3}}
-            </view>
-            <view style="flex:none">
-                {{item.field3}}
+            <view style="display:flex;">
+                <view style="flex:1">
+                    {{item.field2}}
+                </view>
+                <view style="flex:none">
+                    {{item.field3}}
+                </view>
+                <view style="flex:none">
+                    {{item.field3}}
+                </view>
             </view>
          </view>
     </view>

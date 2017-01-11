@@ -12,12 +12,18 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
+      "iconPath":"/images/icon.png",
+      "selectedIconPath":"/images/icon.png",
       "text": "首页"
     },{
       "pagePath": "pages/list/list",
-      "text": "列表"
+      "iconPath":"/images/course.png",
+      "selectedIconPath":"/images/course.png",
+      "text": "课程"
     }, {
       "pagePath": "pages/signup/signup",
+      "iconPath":"/images/signup.png",
+      "selectedIconPath":"/images/signup.png",
       "text": "报名"
     }
     ]
