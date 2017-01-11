@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/signup/signup",
     "pages/slider/slider",
     "pages/list/list",
     "pages/item/item"
@@ -16,8 +17,8 @@
       "pagePath": "pages/list/list",
       "text": "列表"
     }, {
-      "pagePath": "pages/slider/slider",
-      "text": "轮番"
+      "pagePath": "pages/signup/signup",
+      "text": "报名"
     }
     ]
   },
