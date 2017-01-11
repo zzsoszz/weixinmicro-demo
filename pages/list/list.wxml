@@ -1,9 +1,0 @@
-<view class="section">
-  <view class="flex-wrp" style="flex-direction:row;padding:100rpx 20rpx;">
-    <navigator url="/pages/item/item?title=navigate1"   hover-class="navigator-hover" class="flex-item bc_green">
-      成都站
-    </navigator>
-    <navigator url="/pages/item/item?title=navigate2"   hover-class="navigator-hover" class="flex-item bc_red">2</navigator>
-    <navigator url="/pages/item/item?title=navigate3"   hover-class="navigator-hover" class="flex-item bc_blue">3</navigator>
-  </view>
-</view>

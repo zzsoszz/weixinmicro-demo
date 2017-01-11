@@ -3,29 +3,30 @@
     "pages/index/index",
     "pages/signup/signup",
     "pages/slider/slider",
-    "pages/list/list",
-    "pages/item/item"
+    "pages/course/list/list",
+    "pages/course/item/item"
   ],
   "window": {
     "navigationBarTitleText": "Demo"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath":"/images/icon.png",
-      "selectedIconPath":"/images/icon.png",
-      "text": "首页"
-    },{
-      "pagePath": "pages/list/list",
-      "iconPath":"/images/course.png",
-      "selectedIconPath":"/images/course.png",
-      "text": "课程"
-    }, {
-      "pagePath": "pages/signup/signup",
-      "iconPath":"/images/signup.png",
-      "selectedIconPath":"/images/signup.png",
-      "text": "报名"
-    }
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"/images/icon.png",
+        "selectedIconPath":"/images/icon.png",
+        "text": "首页"
+      },{
+        "pagePath": "pages/course/list/list",
+        "iconPath":"/images/course.png",
+        "selectedIconPath":"/images/course.png",
+        "text": "课程"
+      }, {
+        "pagePath": "pages/signup/signup",
+        "iconPath":"/images/signup.png",
+        "selectedIconPath":"/images/signup.png",
+        "text": "报名"
+      }
     ]
   },
   "networkTimeout": {

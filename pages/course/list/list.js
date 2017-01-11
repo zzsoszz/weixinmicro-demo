@@ -27,5 +27,24 @@ Page({
     this.setData({
       scrollTop: this.data.scrollTop + 10
     })
+  },
+  onLoad:function()
+  {
+        wx.request({
+          url: 'https://192.168.1.254/wxapp/rest/schedules',
+          method:"POST",
+          header: {
+              'content-type': 'application/json'
+          },
+          success: function(res) {
+            console.log(res.data)
+          },
+          fail: function(res) {
+            console.log(res.data)
+          },
+          complete: function(res) {
+            console.log(res.data)
+          }
+        });
   }
 })
