@@ -6,3 +6,40 @@
   min-height:100vh;
   height: 100%;
 }
+/**文章大标题**/
+.h1{
+  font-size:36rpx;
+}
+.h2{
+  font-size:34rpx;
+}
+.h3{
+  font-size:30rpx;
+}
+/**文章副标题,panel标题**/
+.h4{
+  font-size:28rpx;
+}
+.h5{
+  font-size:26rpx;
+}
+/**所有tag**/
+.h6{
+  font-size:24rpx;
+}
+.h7{
+  font-size:22rpx;
+}
+.tag{
+  font-size:24rpx;
+  color:#999999;
+}
+.vline{
+  height:50%;
+  border-left:1px solid #B7D0E4;
+  width:1px;
+  margin:0 20rpx;
+}
+.hline{
+  border-top:1rpx solid #eeeeee;
+}

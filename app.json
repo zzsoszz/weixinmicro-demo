@@ -3,8 +3,9 @@
     "pages/index/index",
     "pages/signup/signup",
     "pages/slider/slider",
-    "pages/course/list/list",
-    "pages/course/item/item"
+    "pages/course/item/item",
+    "pages/schedules/list/list",
+    "pages/schedules/item/item"
   ],
   "window": {
     "navigationBarTitleText": "Demo"
@@ -16,12 +17,14 @@
         "iconPath":"/images/icon.png",
         "selectedIconPath":"/images/icon.png",
         "text": "首页"
-      },{
-        "pagePath": "pages/course/list/list",
-        "iconPath":"/images/course.png",
-        "selectedIconPath":"/images/course.png",
+      },
+      {
+        "pagePath": "pages/schedules/list/list",
+        "iconPath":"/images/schedules.png",
+        "selectedIconPath":"/images/schedules.png",
         "text": "课程"
-      }, {
+      },
+       {
         "pagePath": "pages/signup/signup",
         "iconPath":"/images/signup.png",
         "selectedIconPath":"/images/signup.png",

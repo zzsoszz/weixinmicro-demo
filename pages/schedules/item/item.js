@@ -1,13 +1,14 @@
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
   data: {
-    id: ''
+    content: 'red'
   },
   upper: function(e) {
     console.log(e)
   },
   onLoad: function(options) {
     this.setData({
-      id: options.id
-    });
+      content: options.title
+    })
   }
 })
