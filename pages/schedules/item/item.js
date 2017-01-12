@@ -1,4 +1,5 @@
-var order = ['red', 'yellow', 'blue', 'green', 'red']
+var order = ['red', 'yellow', 'blue', 'green', 'red'];
+var WxParse = require('../../../wxParse/wxParse.js');
 Page({
   data: {
     content: 'red'
@@ -7,7 +8,6 @@ Page({
     console.log(e)
   },
   onLoad: function(options) {
-
     var that = this; 
     wx.request({
       url: 'https://192.168.1.254/wxapp/rest/micclass/detail',
@@ -20,6 +20,7 @@ Page({
         console.log(res.data.data);
         if(res.data.success){
           that.setData({content:res.data.data.richHtml.content});
+          WxParse.wxParse('article', 'html', res.data.data.richHtml.content, that,5);
         };
       },
       fail: function(res) {
