@@ -1,5 +1,5 @@
 <view class="container">
-    <view style="background:#ffffff;margin-top:30rpx;" wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
+    <view style="background:#ffffff;margin-top:30rpx;" wx:for="{{items}}" wx:for-index="idx" wx:for-item="item">
         <view style="text-align:center;">
             <navigator url="/pages/course/item/item?id={{item.id}}">
                 <image src="{{item.image}}" style="width:100%">
@@ -8,17 +8,15 @@
         </view>
         <view style="padding:20rpx;">
             <view>
-                {{item.field1}}
+                {{item.classTitle}}
             </view>
             <view style="display:flex;margin-top:20rpx;align-items:center;">
                 <view style="flex:1">
-                    {{item.field2}}
+                    {{item.classSubTitle}}
                 </view>
-                <view style="flex:none">
-                     <image src="/images/icon.png" style="width:50rpx;height:50rpx;"></image>
-                </view>
-                <view style="flex:none">
-                    {{item.field3}}
+                <view   class="tag" style="flex:none;display:flex;align-items:center;">
+                     <image src="/images/icon.png" style="width:50rpx;height:50rpx;"></image>{{item.classTag}}
+                     <image src="/images/icon.png" style="width:50rpx;height:50rpx;"></image> {{item.viewCount}}
                 </view>
             </view>
          </view>

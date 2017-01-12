@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
@@ -21,7 +20,12 @@
 }
 .flex-wrp{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-wrp:after {
+    content: "";
+    flex: auto;
 }
 .flex-wrp .flex-item{
   width:200rpx;

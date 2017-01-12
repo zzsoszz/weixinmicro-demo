@@ -1,7 +1,7 @@
 // pages/index/index.js
 Page({
   data:{
-    array: [
+    items: [
       {
         id:"1",
         field1:"field1",
@@ -19,20 +19,26 @@ Page({
     ]
   },
   onLoad:function(options){
-    /*
-    wx.redirectTo({
-      url: '/pages/course/list/list',
-      success: function(res){
-        // success
+    var that = this; 
+    wx.request({
+      url: 'https://192.168.1.254/wxapp/rest/micclass',
+      data:options.id,
+      method:"POST",
+      header: {
+          'content-type': 'application/json'
       },
-      fail: function() {
-        // fail
+      success: function(res) {
+        if(res.data.success){
+          that.setData({items:res.data.data});
+        };
       },
-      complete: function() {
-        // complete
+      fail: function(res) {
+        console.log(res.data);
+      },
+      complete: function(res) {
+        console.log(res.data);
       }
     });
-    */
   },
   onReady:function(){
     // 页面渲染完成
