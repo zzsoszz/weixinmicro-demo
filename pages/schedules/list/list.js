@@ -4,9 +4,10 @@ Page({
   },
   onLoad:function()
   {
+        console.log("aaaaa",getApp().data.serverurl+'/wxapp/rest/schedules');
         var that=this;
         wx.request({
-          url: 'https://192.168.1.254/wxapp/rest/schedules',
+          url: getApp().data.serverurl+'/wxapp/rest/schedules',
           method:"POST",
           header: {
               'content-type': 'application/json'
@@ -16,10 +17,10 @@ Page({
             that.setData({items:res.data.data});
           },
           fail: function(res) {
-            console.log(res.data)
+            console.log("fail",res)
           },
           complete: function(res) {
-            console.log(res.data)
+            console.log("complete",res)
           }
         });
   }

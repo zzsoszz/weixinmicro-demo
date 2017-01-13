@@ -10,7 +10,7 @@ Page({
   onLoad: function(options) {
     var that = this; 
     wx.request({
-      url: 'https://192.168.1.254/wxapp/rest/micclass/detail',
+      url: getApp().data.serverurl+'/wxapp/rest/micclass/detail',
       data:options.id,
       method:"POST",
       header: {

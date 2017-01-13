@@ -33,7 +33,7 @@ Page({
         });
         console.log(this.data);
         wx.request({
-          url: 'https://192.168.1.254/wxapp/rest/singUp',
+          url: getApp().data.serverurl+'/wxapp/rest/singUp',
           data:e.detail.value,
           method:"POST",
           header: {
@@ -65,10 +65,10 @@ Page({
             }
           },
           fail: function(res) {
-            console.log(res.data)
+            console.log("fail",res);
           },
           complete: function(res) {
-            console.log(res.data)
+            console.log("complete",res);
           }
         });
     }

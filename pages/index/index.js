@@ -6,7 +6,7 @@ Page({
   onLoad:function(options){
     var that = this; 
     wx.request({
-      url: 'https://192.168.1.254/wxapp/rest/micclass',
+      url: getApp().data.serverurl+'/wxapp/rest/micclass',
       data:options.id,
       method:"POST",
       header: {
@@ -15,7 +15,11 @@ Page({
       success: function(res) {
         console.log(res.data.data);
         if(res.data.success){
-          that.setData({items:res.data.data});
+          var datanew=res.data.data.map(function(obj){
+               obj.classLength=Math.floor(obj.classLength/60);
+               return obj;
+          });
+          that.setData({items:datanew});
         };
       },
       fail: function(res) {
