@@ -1,10 +1,13 @@
 <view class="container">
     <view style="background:#ffffff;margin-top:30rpx;" wx:for="{{items}}" wx:for-index="idx" wx:for-item="item">
-        <view style="text-align:center;">
+        <view style="text-align:center;position:relative;">
             <navigator url="/pages/course/item/item?id={{item.id}}">
                 <image src="{{item.image}}" style="width:100%">
                 </image>
             </navigator>
+            <view style="position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;">
+                <text style="display:inline-block;vertical-align:middle;">文章</text>
+            </view>
         </view>
         <view style="padding:20rpx;">
             <view>
@@ -15,8 +18,10 @@
                     {{item.classSubTitle}}
                 </view>
                 <view   class="tag" style="flex:none;display:flex;align-items:center;">
-                     <image src="/images/icon.png" style="width:50rpx;height:50rpx;"></image>{{item.classTag}}
-                     <image src="/images/icon.png" style="width:50rpx;height:50rpx;"></image> {{item.viewCount}}
+                     <image src="/images/signup@2x.png" style="width:22rpx;height:27rpx;"></image>
+                     <text style="margin-left:10rpx;">{{item.classTag}}</text>
+                     <image src="/images/eye@2x.png" style="width:30rpx;height:21rpx;margin-left:20rpx;"></image>
+                     <text style="margin-left:10rpx;"> {{item.viewCount}}</text>
                 </view>
             </view>
          </view>

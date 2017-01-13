@@ -1,11 +1,14 @@
 /**app.wxss**/
-/** {
+/*
+
+* {
   box-sizing: border-box;
 }
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 */
 .container {
   padding: 20rpx 20rpx;

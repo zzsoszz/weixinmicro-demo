@@ -28,6 +28,7 @@ Page({
           'content-type': 'application/json'
       },
       success: function(res) {
+        console.log(res.data.data);
         if(res.data.success){
           that.setData({items:res.data.data});
         };

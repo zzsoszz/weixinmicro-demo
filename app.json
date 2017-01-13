@@ -14,20 +14,20 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"/images/icon.png",
-        "selectedIconPath":"/images/icon.png",
+        "iconPath":"/images/home@2x.png",
+        "selectedIconPath":"/images/home-active@2x.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/schedules/list/list",
-        "iconPath":"/images/schedules.png",
-        "selectedIconPath":"/images/schedules.png",
+        "iconPath":"/images/schedule@2x.png",
+        "selectedIconPath":"/images/schedule-active@2x.png",
         "text": "课程"
       },
        {
         "pagePath": "pages/signup/signup",
-        "iconPath":"/images/signup.png",
-        "selectedIconPath":"/images/signup.png",
+        "iconPath":"/images/signup@2x.png",
+        "selectedIconPath":"/images/signup-active@2x.png",
         "text": "报名"
       }
     ]
