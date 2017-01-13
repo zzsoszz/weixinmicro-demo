@@ -1,8 +1,8 @@
 //app.js
 App({
   data:{  
-         //serverurl:"https://wxapp.bossapp.cn"  
-         serverurl:"https://120.26.46.158"  
+         serverurl:"https://wxapp.bossapp.cn"  
+         //serverurl:"https://120.26.46.158"  
          //serverurl:"https://192.168.1.254"  
   },
   onLaunch: function () {

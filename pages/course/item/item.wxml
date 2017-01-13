@@ -71,9 +71,9 @@
                 </view> 
         </view>
         -->
-        <view class="h4" style="padding:20rpx;text-align:center;font-weight:700;color:#999999;">
+        <!--<view class="h4" style="padding:20rpx;text-align:center;font-weight:700;color:#999999;">
                 展开全部
-        </view>
+        </view>-->
         
     </view>
 </view>
