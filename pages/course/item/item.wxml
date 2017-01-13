@@ -12,7 +12,7 @@
          </view>
          <view class="h4" style="color:#666666;margin-top:20rpx;">
             <view  style="display:inline">{{teacherName}}</view>
-            <view  style="display:inline;margin-left:20rpx;">珠海格力有限公司</view>
+            <view  style="display:inline;margin-left:20rpx;">{{teacherDes}}</view>
          </view>
          <!--
          <view class="h6" style="display:flex;margin-top:20rpx;color:#999999;height:50rpx;align-items:center;" >

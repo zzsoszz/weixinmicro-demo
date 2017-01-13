@@ -18,7 +18,13 @@ Page({
       success: function(res) {
         console.log(res.data.data);
         if(res.data.success){
-          that.setData(res.data.data);
+          var datanew=res.data.data;
+          datanew.videos=datanew.videos.map(function(obj){
+               obj.videoLength=Math.floor(obj.videoLength/60);
+               return obj;
+          });
+          //datanew.classLength=Math.floor(datanew.classLength/60);
+          that.setData(datanew);
         };
       },
       fail: function(res) {
