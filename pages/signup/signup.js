@@ -7,6 +7,11 @@ Page({
     username: '',
     phone: ""
   },
+  makeCall:function(e){
+    wx.makePhoneCall({
+      phoneNumber: '4000288383' //仅为示例，并非真实的电话号码
+    });
+  },
   formBindsubmit:function(e){
     if(e.detail.value.username.length==0||e.detail.value.phone.length==0){
         this.setData({

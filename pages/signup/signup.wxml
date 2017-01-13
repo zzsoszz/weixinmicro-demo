@@ -11,7 +11,7 @@
   -->
 
   <view style="padding:20rpx;">
-    <view style="position:fixed;right:20rpx;top:20rpx;">
+    <view style="position:fixed;right:20rpx;top:20rpx;" bindtap="makeCall" >
         <image src="/images/contanct.png" style="width:120rpx;height:120rpx;"></image>
     </view>
     <form bindsubmit="formBindsubmit" 
