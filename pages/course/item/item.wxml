@@ -29,10 +29,12 @@
                 <view>{{viewCount}}</view>
                 <view>播放</view>
             </view>
+            <!--
             <view>
                 <image style="width:50rpx;height:50rpx;" src="/images/icon.png"></image>
                 <image style="width:50rpx;height:50rpx;" src="/images/icon.png"></image>
             </view>
+            -->
          </view>
     </view>
     <view style="padding:20rpx;">
