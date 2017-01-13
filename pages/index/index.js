@@ -1,22 +1,7 @@
 // pages/index/index.js
 Page({
   data:{
-    items: [
-      {
-        id:"1",
-        field1:"field1",
-        field2:"field2",
-        field3:"field3",
-        image: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
-      },
-      {
-        id:"2",
-        field1:"field1",
-        field2:"field2",
-        field3:"field3",
-        image: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-      }
-    ]
+    items: []
   },
   onLoad:function(options){
     var that = this; 

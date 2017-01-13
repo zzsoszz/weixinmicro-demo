@@ -1,32 +1,38 @@
 <view class="container">
     <view style="background:#ffffff;margin-top:30rpx;" wx:for="{{items}}" wx:for-index="idx" wx:for-item="item">
-        <view style="text-align:center;position:relative;">
+
+        <view wx:if="{{item.classType==1}}" style="text-align:center;position:relative;">
             <navigator url="/pages/course/item/item?id={{item.id}}">
-                <image src="{{item.image}}" style="width:100%">
+                <image src="http://bossappnew.oss-cn-hangzhou.aliyuncs.com/{{item.classCover}}" style="width:100%">
                 </image>
             </navigator>
-            
-            <view style="line-height:40rpx;position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;">
+            <view   style="line-height:40rpx;position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;">
                 <image  src="/images/play@2x.png" style="width:16rpx;height:18rpx;display:inline-block;vertical-align:middle;" >
                 </image>
-                <text style="font-size:25rpx;display:inline-block;vertical-align:middle;">30分钟</text>
+                <text style="font-size:25rpx;display:inline-block;vertical-align:middle;">{{item.classLength}}分钟</text>
             </view>
-           <!--
-            <view style="position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;">
+        </view>
+
+        <view wx:elif="{{item.classType==2}}" style="text-align:center;position:relative;">
+            <navigator url="/pages/schedules/item/item?id={{item.id}}">
+                <image src="http://bossappnew.oss-cn-hangzhou.aliyuncs.com/{{item.classCover}}" style="width:100%">
+                </image>
+            </navigator>
+           <view  style="position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;">
                 <text style="display:inline-block;vertical-align:middle;">文章</text>
             </view>
-             -->
         </view>
+        
         <view style="padding:20rpx;">
             <view>
                 {{item.classTitle}}
             </view>
             <view style="display:flex;margin-top:20rpx;align-items:center;">
                 <view style="flex:1">
-                    {{item.classSubTitle}}
+                    <!--{{item.classSubTitle}}-->
                 </view>
                 <view   class="tag" style="flex:none;display:flex;align-items:center;">
-                     <image src="/images/signup@2x.png" style="width:22rpx;height:27rpx;"></image>
+                     <image src="/images/video@2x.png" style="width:22rpx;height:27rpx;"></image>
                      <text style="margin-left:10rpx;">{{item.classTag}}</text>
                      <image src="/images/eye@2x.png" style="width:30rpx;height:21rpx;margin-left:20rpx;"></image>
                      <text style="margin-left:10rpx;"> {{item.viewCount}}</text>
