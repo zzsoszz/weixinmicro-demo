@@ -17,6 +17,9 @@
   min-height:100vh;
   height: 100%;
 }
+input:placeholder{
+   color:#cccccc;
+}
 /**文章大标题**/
 .h1{
   font-size:36rpx;

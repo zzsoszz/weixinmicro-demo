@@ -13,6 +13,7 @@ Page({
     });
   },
   formBindsubmit:function(e){
+    var self=this;
     if(e.detail.value.username.length==0||e.detail.value.phone.length==0){
         this.setData({
           tip:'提示：用户名和手机号不能为空！',
@@ -44,21 +45,32 @@ Page({
             if((res.data.success))
             {
               wx.showModal({
+                showCancel:false,
                 title: '提示',
                 content: '提交成功!',
                 success: function(res) {
                   if (res.confirm) {
                     console.log('用户点击确定')
+                    self.setData({
+                      tip:'提交成功！',
+                      username:'',
+                      phone:''
+                    });
                   }
                 }
               })
             }else{
               wx.showModal({
+                showCancel:false,
                 title: '提示',
                 content: '提交失败!',
                 success: function(res) {
                   if (res.confirm) {
-                    console.log('用户点击确定')
+                    self.setData({
+                      tip:'提交成功！',
+                      username:'',
+                      phone:''
+                    });
                   }
                 }
               })

@@ -21,13 +21,13 @@
       </view>
       <view class="section" style="margin-top:20rpx;display:flex;padding:20rpx 0;align-items:center;">
         <view class="section__title">联系方式</view>
-        <input name="phone" style="padding:0 20rpx;color:#cccccc" placeholder="11位手机号码"/>
+        <input name="phone" style="padding:0 20rpx;"   value="{{phone}}"  placeholder-class="inputplaceholder" placeholder="11位手机号码"/>
       </view>
       <view class="hline">
       </view>
       <view class="section"  style="display:flex;padding:20rpx 0;align-items:center;">
         <view class="section__title">您的称呼</view>
-        <input name="username" style="padding:0 20rpx;color:#cccccc;" placeholder="最多6位姓名"/>
+        <input name="username" style="padding:0 20rpx;" value="{{username}}"  placeholder-class="inputplaceholder"  placeholder="最多6位姓名"/>
       </view>
       <view class="hline">
       </view>
