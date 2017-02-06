@@ -16,7 +16,9 @@ Page({
         console.log(res.data.data);
         if(res.data.success){
           var datanew=res.data.data.map(function(obj){
-               obj.classLength=Math.floor(obj.classLength/60);
+               var minutes=Math.floor(obj.classLength/60);
+               var second=Math.floor(obj.classLength%60);
+               obj.classLength=minutes+":"+second;
                return obj;
           });
           that.setData({items:datanew});

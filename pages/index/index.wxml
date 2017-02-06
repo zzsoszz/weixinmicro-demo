@@ -9,7 +9,7 @@
             <view   style="height:40rpx;line-height:40rpx;position:absolute;right:20rpx;bottom:20rpx;background:#000000;opacity:0.5;color:#ffffff;padding:0 10rpx;border-radius:10rpx;border:5rpx solid #000000;display:block;">
                 <image  src="/images/play@2x.png" style="width:16rpx;height:18rpx;display:inline-block;vertical-align:middle;" >
                 </image>
-                <text style="margin-left:5rpx;font-size:25rpx;display:inline-block;vertical-align:middle;">{{item.classLength}}分钟</text>
+                <text style="margin-left:5rpx;font-size:25rpx;display:inline-block;vertical-align:middle;">{{item.classLength}}</text>
             </view>
         </view>
         
